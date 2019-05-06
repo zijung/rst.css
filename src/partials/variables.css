@@ -1,0 +1,39 @@
+:root {
+  /* Colors */
+  --black: rgb(10, 10, 10);
+  --black-bis: rgb(18, 18, 18);
+  --black-ter: rgb(36, 36, 36);
+  --white: rgb(255, 255, 255);
+  --white-ter: rgb(244, 243, 241);
+  --white-bis: rgb(250, 250, 250);
+  --grey-darker: rgb(54, 54, 54);
+  --grey-dark: rgb(74, 74, 74);
+  --grey: rgb(121, 121, 121);
+  --grey-light: rgb(181, 181, 181);
+  --grey-lighter: rgb(219, 219, 219);
+  --green: rgb(95, 191, 94);
+  --green-light: rgba(70, 185, 128, 0.5);
+
+  /* Text colors */
+  --text: var(--grey-dark);
+  --text-light: var(--grey);
+  --text-strong: var(--grey-darker);
+
+  /* Typography */
+  --family-sans-serif: Arial, sans-serif;
+
+  /* Theme colors */
+  --code-background: rgb(248, 248, 248);
+
+  /* Box shadow colors */
+  --box-shadow-dark: rgba(0, 0, 0, 0.15);
+
+  /* Radius */
+  --radius: 3px;
+
+  /* List */
+  --ol-list-style: decimal outside;
+  --ol-list-style-secondary: lower-roman outside;
+  --ul-list-style: disc outside;
+  --ul-list-style-secondary: circle outside;
+}

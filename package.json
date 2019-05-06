@@ -1,0 +1,21 @@
+{
+  "name": "rst.css",
+  "version": "1.0.0",
+  "description": "reStructuredText Styles",
+  "main": "src/main.css",
+  "repository": "https://github.com/zijung/rst.css.git",
+  "author": "Zijung Chueh <i@zijung.me>",
+  "license": "MIT",
+  "scripts": {
+    "build": "postcss src/main.css -o rst.css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^6.1.2",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.6.0",
+    "stylelint": "^10.0.1",
+    "stylelint-config-standard": "^18.3.0"
+  }
+}
