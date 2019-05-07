@@ -8,8 +8,8 @@ let stylelint = require('stylelint')({
   },
 });
 
-module.exports = {
-  map: {
+module.exports = ctx => ({
+  map: ctx.env === 'production' ? false : {
     inline: true,
   },
   plugins: [
@@ -31,4 +31,4 @@ module.exports = {
     require('autoprefixer')(),
     require('cssnano')(),
   ],
-};
+});

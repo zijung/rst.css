@@ -7,7 +7,8 @@
   "author": "Zijung Chueh <i@zijung.me>",
   "license": "MIT",
   "scripts": {
-    "build": "postcss src/main.css -o rst.css"
+    "dev": "postcss src/main.css --env development -o rst.css -w",
+    "build": "postcss src/main.css --env production -o rst.css"
   },
   "devDependencies": {
     "autoprefixer": "^9.5.1",
