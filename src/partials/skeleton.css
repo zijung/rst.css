@@ -64,9 +64,36 @@ ul {
   }
 }
 
+code {
+  border-radius: var(--radius);
+  background-color: var(--code-background);
+  padding: 0.2rem;
+}
+
 pre {
   padding: 0.5rem 1rem;
   border-radius: var(--radius);
   background-color: var(--code-background);
   overflow-x: auto;
+
+  & > code {
+    counter-reset: linecounter;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 0;
+
+    & > span.code-line {
+      counter-increment: linecounter;
+
+      &::before {
+        content: counter(linecounter);
+        margin-left: -1em;
+        padding-right: 1em;
+        width: 2em;
+        display: inline-block;
+        color: var(--grey-light);
+        text-align: right;
+      }
+    }
+  }
 }
