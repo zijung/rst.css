@@ -68,4 +68,5 @@ pre {
   padding: 0.5rem 1rem;
   border-radius: var(--radius);
   background-color: var(--code-background);
+  overflow-x: auto;
 }
